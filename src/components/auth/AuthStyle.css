@@ -1,0 +1,50 @@
+.Buttons {
+  background-color: #93a4a7;
+  border: 0 solid #e5e7eb;
+  color: #000000;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 10px;
+  cursor: pointer;
+  transform: rotate(-2deg);
+}
+
+.Buttons:focus {
+  outline: 0;
+}
+
+.Buttons:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.Buttons:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .Buttons {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+  }
+}

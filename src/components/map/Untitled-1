@@ -1,0 +1,536 @@
+
+  const locations = useMemo(() => [
+    {
+      name: 'Casa',
+      x: "836.27",
+      y: "531.89",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Questa dimora è una modesta casa di campagna del periodo medievale. Costruita con solide mura di pietra e un tetto di paglia, si erge in mezzo a campi coltivati. Un piccolo orto e un pollaio si trovano nelle vicinanze. All\'interno, un grande camino riscalda l\'ambiente principale, dove una robusta tavola di legno è il centro della vita familiare. Semplici arredi e utensili d\'epoca completano questo rustico rifugio, riflettendo la vita quotidiana di un contadino medievale.',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: {  cx: 836.27, cy: 531.89, r: 0.5 }    
+    },
+    {
+      name: 'Olhos',
+      x: "2235.06",
+      y: "700.75",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 3,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: {  cx: 2235.06, cy: 700.75, r: 1 }
+    },
+    {
+      name: 'Adnictora',
+      x: "1631.53",
+      y: "947.18",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 1631.53, cy: 947.18, r: 1 }
+    },
+    {
+      name: 'Sacanav',
+      x: "2171",
+      y: "1001.5",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 2171, cy: 1001.5, r: 1 }
+    },
+    {
+      name: 'Atherton',
+      x: "1838.5",
+      y: "316",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 1838.5, cy: 316, r: 1 }
+    },
+    {
+      name: 'Besla',
+      x: "2188.5",
+      y: "817.37",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 2188.5, cy: 817.37, r: 1 }
+    },
+    {
+      name: 'Torzalus',
+      x: "741",
+      y: "995.5",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 741, cy: 995.5, r: 1 }
+    },
+    {
+      name: 'Ersel',
+      x: "2075.99",
+      y: "1062.22",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 2075.99, cy: 1062.22, r: 1 }
+    },
+    {
+      name: 'Kirchren',
+      x: "1460",
+      y: "233.5",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 1460, cy: 233.5, r: 1 }
+    },
+    {
+      name: 'Muria',
+      x: "1037.5",
+      y: "911.5",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 1037.5, cy: 911.5, r: 1 }
+    },
+    {
+      name: 'Conatita',
+      x: "1401.41",
+      y: "926.14",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 1401.41, cy: 926.14, r: 1 }
+    },
+    {
+      name: 'Pheofha',
+      x: "874.76",
+      y: "522.69",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 874.76, cy: 522.69, r: 1 }
+    },
+    {
+      name: 'Rocanza',
+      x: "2193",
+      y: "592",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 2193, cy: 592, r: 1 }
+    },
+    {
+      name: 'Clitham',
+      x: "2163",
+      y: "412.5",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 2163, cy: 412.5, r: 1 }
+    },
+    {
+      name: 'Akala',
+      x: "1925.5",
+      y: "961.5",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 1925.5, cy: 961.5, r: 1 }
+    },
+    {
+      name: 'Renchrin',
+      x: "988.5",
+      y: "277.5",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 988.5, cy: 277.5, r: 1 }
+    },
+    {
+      name: 'Aumi',
+      x: "2111.5",
+      y: "667",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 2111.5, cy: 667, r: 1 }
+    },
+    {
+      name: 'Yeropermu',
+      x: "532.5",
+      y: "700",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 532.5, cy: 700, r: 1 }
+    },
+    {
+      name: 'Rebolos',
+      x: "716.5",
+      y: "546.5",
+      dy: "-1.5",
+      fontSize: "4",
+      description: 'Descrizione di Olhos',
+      image: 'https://via.placeholder.com/150',
+      cards:[{
+        name: 'Campo di grano',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      },{
+        name: 'Pollaio',
+        level: 1,
+        description: 'Un campo di grano è un terreno coltivato con cereali come il grano, coltivato per la produzione di farina, pane e altri alimenti. È un elemento essenziale per la vita quotidiana e la sopravvivenza in un mondo medievale.',
+        image: 'https://via.placeholder.com/150',
+      }],
+      circle: { cx: 716.5, cy: 546.5, r: 1 }
+    },
+  ], []);
+  
+
+  const medievalFarmStructures = [
+    {
+      name: 'Campo di grano',
+      description: 'Un terreno fertile per la coltivazione di cereali.',
+      baseCost: 100,
+      baseProductionTime: 7,
+      baseYield: 50,
+      upgrades: [
+        { level: 1, cost: 50, productionTimeReduction: 1, yieldIncrease: 10 },
+        { level: 2, cost: 100, productionTimeReduction: 1, yieldIncrease: 20 },
+        { level: 3, cost: 200, productionTimeReduction: 2, yieldIncrease: 30 }
+      ],
+      possibleCrops: ['Grano', 'Orzo', 'Avena']
+    },
+    {
+      name: 'Pollaio',
+      description: 'Un ricovero per l\'allevamento di pollame.',
+      baseCost: 80,
+      baseProductionTime: 1,
+      baseYield: 10,
+      upgrades: [
+        { level: 1, cost: 40, productionTimeReduction: 0, yieldIncrease: 5 },
+        { level: 2, cost: 80, productionTimeReduction: 0, yieldIncrease: 10 },
+        { level: 3, cost: 160, productionTimeReduction: 0, yieldIncrease: 15 }
+      ],
+      products: ['Uova', 'Carne di pollo']
+    },
+    {
+      name: 'Recinto per pecore',
+      description: 'Un\'area recintata per l\'allevamento di pecore.',
+      baseCost: 150,
+      baseProductionTime: 30,
+      baseYield: 5,
+      upgrades: [
+        { level: 1, cost: 75, productionTimeReduction: 5, yieldIncrease: 2 },
+        { level: 2, cost: 150, productionTimeReduction: 5, yieldIncrease: 3 },
+        { level: 3, cost: 300, productionTimeReduction: 10, yieldIncrease: 5 }
+      ],
+      products: ['Lana', 'Carne di pecora', 'Latte di pecora']
+    },
+    {
+      name: 'Orto',
+      description: 'Un piccolo appezzamento per la coltivazione di ortaggi.',
+      baseCost: 60,
+      baseProductionTime: 3,
+      baseYield: 20,
+      upgrades: [
+        { level: 1, cost: 30, productionTimeReduction: 0, yieldIncrease: 5 },
+        { level: 2, cost: 60, productionTimeReduction: 1, yieldIncrease: 10 },
+        { level: 3, cost: 120, productionTimeReduction: 1, yieldIncrease: 15 }
+      ],
+      possibleCrops: ['Carote', 'Cipolle', 'Cavoli', 'Rape']
+    },
+    {
+      name: 'Frutteto',
+      description: 'Un terreno dedicato alla coltivazione di alberi da frutto.',
+      baseCost: 200,
+      baseProductionTime: 90,
+      baseYield: 100,
+      upgrades: [
+        { level: 1, cost: 100, productionTimeReduction: 10, yieldIncrease: 25 },
+        { level: 2, cost: 200, productionTimeReduction: 15, yieldIncrease: 50 },
+        { level: 3, cost: 400, productionTimeReduction: 20, yieldIncrease: 75 }
+      ],
+      possibleCrops: ['Mele', 'Pere', 'Prugne', 'Ciliegie']
+    },
+    {
+      name: 'Mulino',
+      description: 'Una struttura per la macinazione dei cereali.',
+      baseCost: 300,
+      baseProductionTime: 1,
+      baseYield: 100,
+      upgrades: [
+        { level: 1, cost: 150, productionTimeReduction: 0, yieldIncrease: 25 },
+        { level: 2, cost: 300, productionTimeReduction: 0, yieldIncrease: 50 },
+        { level: 3, cost: 600, productionTimeReduction: 0, yieldIncrease: 100 }
+      ],
+      products: ['Farina']
+    },
+    {
+      name: 'Stalla',
+      description: 'Un ricovero per l\'allevamento di bovini.',
+      baseCost: 250,
+      baseProductionTime: 1,
+      baseYield: 15,
+      upgrades: [
+        { level: 1, cost: 125, productionTimeReduction: 0, yieldIncrease: 5 },
+        { level: 2, cost: 250, productionTimeReduction: 0, yieldIncrease: 10 },
+        { level: 3, cost: 500, productionTimeReduction: 0, yieldIncrease: 20 }
+      ],
+      products: ['Latte', 'Carne bovina', 'Cuoio']
+    },
+    {
+      name: 'Apiario',
+      description: 'Una struttura per l\'allevamento di api.',
+      baseCost: 120,
+      baseProductionTime: 30,
+      baseYield: 10,
+      upgrades: [
+        { level: 1, cost: 60, productionTimeReduction: 5, yieldIncrease: 3 },
+        { level: 2, cost: 120, productionTimeReduction: 5, yieldIncrease: 6 },
+        { level: 3, cost: 240, productionTimeReduction: 10, yieldIncrease: 12 }
+      ],
+      products: ['Miele', 'Cera']
+    },
+    {
+      name: 'Vigneto',
+      description: 'Un terreno dedicato alla coltivazione di uva.',
+      baseCost: 180,
+      baseProductionTime: 120,
+      baseYield: 200,
+      upgrades: [
+        { level: 1, cost: 90, productionTimeReduction: 15, yieldIncrease: 50 },
+        { level: 2, cost: 180, productionTimeReduction: 15, yieldIncrease: 100 },
+        { level: 3, cost: 360, productionTimeReduction: 30, yieldIncrease: 200 }
+      ],
+      products: ['Uva', 'Vino']
+    },
+    {
+      name: 'Porcilaia',
+      description: 'Un recinto per l\'allevamento di maiali.',
+      baseCost: 140,
+      baseProductionTime: 60,
+      baseYield: 100,
+      upgrades: [
+        { level: 1, cost: 70, productionTimeReduction: 10, yieldIncrease: 25 },
+        { level: 2, cost: 140, productionTimeReduction: 10, yieldIncrease: 50 },
+        { level: 3, cost: 280, productionTimeReduction: 20, yieldIncrease: 100 }
+      ],
+      products: ['Carne suina', 'Lardo']
+    }
+  ];
